@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uchignon</title>
+    <style>
+     
+      * {box-sizing: border-box;}
+             
+      body {margin: 0;
+            font-family: "Lucida Grande";}
+
+         a {text-decoration: none;}
+      
+      
+      .container {
+        padding: 25px 35px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .name {
+        display: inline-block;
+        float: left;
+        cursor : pointer;
+        
+         }
+      .name:hover {
+          color: red;
+          }
+      
+           
+      .menu {
+        text-align: right;
+        margin-bottom: 45px;
+        
+      }
+      
+      .meun-list {
+       color: black;
+       padding-right : 25px;
+       font-size: 15px; 
+     }
+           
+      
+      ul {
+        list-style-type: none;
+        border: 1px solid black;
+        text-align: left;
+        margin: 0px;
+        padding: 0px;
+      }
+      
+      .li1 {
+        border-bottom : 1px solid black;
+        margin: 5px;
+        color: black;
+      }
+      
+            
+      .work1 {
+        width: 650px;
+        height: 500px;
+        background-color: lightgray;
+        margin-left: 45px;
+       overflow: hidden;
+        border: 1px solid lightgray;
+      }
+      
+      .work2 {
+        margin-top: 80px;
+        margin-left: 70px;
+        display: inline-block;
+        float: left;
+        
+       
+      }
+
+      .w2 {
+        display: inline-block;
+        width: 330px;
+        height: 350px;
+        margin-left: 25px; 
+        background-color:#99b2e6;
+        overflow: hidden;
+
+      }
+     
+      .w1tem {
+        width:100%;
+        
+      }
+      
+      .w2tem {
+        width: 600px;
+        margin-bottom:50px;
+      }
+     
+      
+      
+      
+      @media all and (max-width:670px) {
+        
+        .container {
+          
+          width:100%;
+          padding : 0px;
+        }
+        
+        .work1 {
+          display: inline-block;
+          margin: 0px;
+          width: 100%; }
+        
+        .work2 {
+          display: inline-block ;
+          margin-top : 30px;
+          margin-left: 0px;
+          margin-right: 0px;
+          margin-bottom: 30px;
+          width: 100%;
+         }
+        
+         .w2 {
+        display: inline-block;
+        width: 100%;
+        margin: 0px;
+        background-color:#99b2e6;
+        overflow: hidden; }
+        
+
+        
+        
+       .w1tem {
+        width: 100%;
+        margin: 0px;}
+      
+       
+        
+        
+       
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="name">Uchignon</div>
+      <ul style="display:none;">
+        <li> <a class="li1" href="%E2%80%9C#%E2%80%9D"> morning </a> </li>
+        <li> <a class="li1" href="%E2%80%9C#%E2%80%9D"> night </a> </li>
+      </ul>
+      <div class="menu"> <a class="meun-list" href="file://Users/yushinyoung/Desktop/f-pj/uchignon_About.html">About</a>
+      </div>
+      <div class="w-space">
+        <div class="work1"> <img class="w1tem" src="ftp://ushinyoung@chignonss.com/html/work/wall2.jpg"><a
+            href="ftp://ushinyoung@ushinyoung.dothome.co.kr/html/work/wall2.jpg"></a><a
+            href="ftp://ushinyoung@ushinyoung.dothome.co.kr/html/work/wall2.jpg"></a>
+        </div>
+        <div class="work2">
+          <div class="w2 item1"> <img class="w2tem" src="https://postfiles.pstatic.net/MjAxOTA1MjVfMjQ4/MDAxNTU4NzkyNDI1NjUz.6WH4zbF5yamPfWUHbLt1AOX4-uKLwDjzxY4trkoZOHQg.Tpd7eIVHR3NQpJRbs2cy5pZsr7TN0yzLzSjKJBKe7skg.JPEG.utlsdud/bicycles.jpg?type=w773">
+          </div>
+          <div class="w2 item2"><img class="w2tem" src="https://postfiles.pstatic.net/MjAxOTA1MjVfMjQ4/MDAxNTU4NzkyNDI1NjUz.6WH4zbF5yamPfWUHbLt1AOX4-uKLwDjzxY4trkoZOHQg.Tpd7eIVHR3NQpJRbs2cy5pZsr7TN0yzLzSjKJBKe7skg.JPEG.utlsdud/bicycles.jpg?type=w773">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+function toggleDocs(event) {
+
+    if (event.target && event.target.className == 'name') {
+        var next = event.target.nextElementSibling;
+        if (next.style.display == "none") {
+            next.style.display = "inline-block";
+        } else {
+            next.style.display = "none";
+        }
+    }
+}
+document.addEventListener('click', toggleDocs, true);
+</script> <script>
+function bigImg(x) {
+  x.style.border = "3px solid yellow";
+}
+
+function normalImg(x) {
+x.style.border = "none";
+}
+</script>
+  </body>
+</html>
